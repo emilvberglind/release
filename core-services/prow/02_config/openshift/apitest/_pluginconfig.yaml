@@ -1,0 +1,13 @@
+approve:
+- commandHelpLink: ""
+  repos:
+  - openshift/apitest
+  require_self_approval: false
+lgtm:
+- repos:
+  - openshift/apitest
+  review_acts_as_lgtm: true
+plugins:
+  openshift/apitest:
+    plugins:
+    - approve
